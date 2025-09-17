@@ -362,7 +362,7 @@ section .title::after{
 
 /* work section styling */
 .work .title::after{
-    content: "Case Studies";
+    content: "Projects";
 }
 .work .card{
     background: #222;
@@ -689,6 +689,7 @@ footer span a:hover{
     border-radius: 6px;
   }
 }   
+
 
 
 
