@@ -643,7 +643,7 @@ footer span a:hover{
 
 /*-----mobile background --------*/
 @media only screen and (max-width: 600px) {
-.home .home-content{
+.home {
   width: 100%;
   height: 120vh; /* высота блока, можно менять */
   top: 5%;   /* на сколько опустить текст вниз от верхней границы */ 
@@ -657,12 +657,22 @@ footer span a:hover{
 /* Для экранов до 600px */
 @media only screen and (max-width: 600px) {
   .home .home-content button {
-    font-size: 16px;   /* уменьшаем шрифт */
-    padding: 8px 20px; /* делаем меньше отступы внутри */
-    margin-top: 15px;  /* можно чуть сократить отступ сверху */
-    border-radius: 4px; /* чуть меньше скругление */
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: rgb(2, 255, 247);
+  border: 2px solid rgb(2, 255, 247);
+  transition: all 0.3s ease;
   }
 }
+
 
 
 
