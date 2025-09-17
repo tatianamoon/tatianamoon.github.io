@@ -174,7 +174,7 @@ position: relative;
 .home-content {
   position: absolute;
   top: 50%; 
-  left: 50%;
+  left: 5%;
   transform: none;
   text-align: left;
     width: 90%; 
@@ -714,6 +714,7 @@ footer span a:hover{
     border-radius: 6px;
   }
 }   
+
 
 
 
