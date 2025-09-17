@@ -653,6 +653,13 @@ footer span a:hover{
  }
 }
 
+/* По умолчанию (для десктопа) */
+.request-cv {
+  position: relative; /* обычное позиционирование */
+  display: inline-block;
+  margin: 20px auto; /* если нужно центрировать по горизонтали */
+}
+
  /* Только для мобильных (до 600px) */
 @media only screen and (max-width: 600px) {
   .request-cv {
@@ -666,6 +673,7 @@ footer span a:hover{
     border-radius: 6px;
   }
 }   
+
 
 
 
