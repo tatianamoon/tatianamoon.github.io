@@ -642,8 +642,8 @@ footer span a:hover{
 
 /*-----mobile background --------*/
 @media only screen and (max-width: 600px) {
-.home-content {
-  position: absolute;
+.home {
+  
   width: 80%;
   height: 100vh; /* высота блока, можно менять */
   top: 15%;   /* на сколько опустить текст вниз от верхней границы */ 
@@ -651,7 +651,9 @@ footer span a:hover{
   background-size: cover; /* масштабирует, чтобы заполнить блок */
   background-position: center; /* центрирует картинку */
   background-repeat: no-repeat;
+    }
 }
+
 
 
 
