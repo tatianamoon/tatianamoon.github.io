@@ -650,6 +650,22 @@ footer span a:hover{
   background-size: cover; /* масштабирует, чтобы заполнить блок */
   background-position: center; /* центрирует картинку */
   background-repeat: no-repeat;
+    }
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 30px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: rgb(2, 255, 247);
+    font-weight: 500;
   }
 }
 
@@ -673,6 +689,7 @@ footer span a:hover{
     border-radius: 6px;
   }
 }   
+
 
 
 
