@@ -642,17 +642,11 @@ footer span a:hover{
 
 
 /*-----mobile background --------*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 .home{
-    background: url("Fon_AI6.jpg") no-repeat top;
-}
-
-}
-/* Мобильные устройства */
-@media (max-width: 480px) {
-  .hero {
     height: 30vh; /* блок занимает примерно верхние 30% экрана */
     background-position: center top; /* смещаем фокус на верх */
+    background: url("Fon_AI6.jpg") no-repeat top;
   }
   .caption {
     position: absolute;
@@ -662,6 +656,7 @@ footer span a:hover{
     line-height: 1.2rem;
   }
 }
+
 
 
 
