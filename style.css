@@ -173,10 +173,11 @@ position: relative;
 
 .home-content {
   position: absolute;
-  top: 50%; 
-  left: 50%;
-  transform: translate(-50%, -50%); /* центр по умолчанию */
-  text-align: center;
+  top: 20%; 
+  left: 5%;
+  transform: none;
+  text-align: left;
+    width: 90%; 
   color: white;
 }
 
@@ -670,21 +671,21 @@ footer span a:hover{
     @media only screen and (max-width: 600px) {
   .home-content {
     top: 15%;                /* прямо под меню */
-    left: 50%;
-    transform: translateX(-50%); /* без вертикального смещения */
+    left: 5%;
+    transform: none;
     width: 90%;              /* чтобы текст не уезжал */
 }
     }
 .home .home-content .text-1{
-    font-size: 27px;
+    font-size: 17px;
 }
 .home .home-content .text-2{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     margin-left: -3px;
 }
 .home .home-content .text-3{
-    font-size: 30px;
+    font-size: 20px;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
@@ -713,6 +714,7 @@ footer span a:hover{
     border-radius: 6px;
   }
 }   
+
 
 
 
