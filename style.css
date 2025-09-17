@@ -639,14 +639,17 @@ footer span a:hover{
         line-height: 38px;
     }
 }
-
+/*-----mobile background --------*/
 @media only screen and (max-width: 600px) {
-  .home-content {
-    position: absolute;       /* оставляем absolute для точного позиционирования */
-    top: 15%;                 /* под меню — регулируй это число */
-    left: 50%;                /* центр по горизонтали */
-    transform: translateX(-50%); /* убираем вертикальное смещение */
-    text-align: center;       /* чтобы текст был по центру */
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* высота блока, можно менять */
+  top: 15%;   /* на сколько опустить текст вниз от верхней границы */ 
+  background-image: url('Fon_AI5.jpg'); /* твоя картинка */
+  background-size: cover; /* масштабирует, чтобы заполнить блок */
+  background-position: center; /* центрирует картинку */
+  background-repeat: no-repeat;
   }
 }
 
@@ -670,6 +673,7 @@ footer span a:hover{
     border-radius: 6px;
   }
 }   
+
 
 
 
