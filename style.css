@@ -653,7 +653,20 @@ footer span a:hover{
  }
 }
 
-    
+ /* Только для мобильных (до 600px) */
+@media only screen and (max-width: 600px) {
+  .request-cv {
+    position: fixed;       /* приклеиваем к экрану */
+    bottom: 20px;          /* отступ от низа экрана */
+    left: 50%;             /* центрируем по горизонтали */
+    transform: translateX(-50%); /* точное горизонтальное центрирование */
+    z-index: 1000;         /* чтобы была поверх всех элементов */
+    padding: 12px 30px;    /* размер кнопки для мобильника */
+    font-size: 16px;       /* уменьшаем текст */
+    border-radius: 6px;
+  }
+}   
+
 
 
 
