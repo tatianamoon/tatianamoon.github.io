@@ -639,20 +639,30 @@ footer span a:hover{
         line-height: 38px;
     }
 }
-
-/*-----mobile background --------*/
+    /* Мобильный блок */
 @media only screen and (max-width: 600px) {
-.home {
-  position: relative;
+  .home-content {
   width: 100%;
   height: 100vh; /* высота блока, можно менять */
   top: 15%;   /* на сколько опустить текст вниз от верхней границы */ 
-  background-image: url('Fon_AI5.jpg'); /* твоя картинка */
-  background-size: cover; /* масштабирует, чтобы заполнить блок */
-  background-position: center; /* центрирует картинку */
-  background-repeat: no-repeat;
-    }
+    display: block;
+    background-image: url('Fon_AI5.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+  }
 }
+
+/* Скрыть на десктопе */
+@media only screen and (min-width: 601px) {
+  .home-content {
+    display: none;
+  }
+}
+
+    
+
+
 
 
 
