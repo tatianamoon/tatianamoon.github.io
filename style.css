@@ -644,7 +644,7 @@ footer span a:hover{
 /*-----mobile background --------*/
 @media only screen and (max-width: 600px) {
 .home{
-    background: url("Fon_AI2.jpg") no-repeat top;
+    background: url("Fon_AI6.jpg") no-repeat top;
 }
 
 }
@@ -687,6 +687,7 @@ footer span a:hover{
     left: 3%;
   }
 }
+
 
 
 
