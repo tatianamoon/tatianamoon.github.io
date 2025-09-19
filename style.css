@@ -698,6 +698,23 @@ footer span a:hover{
   }
 }   
 
+.thank-you {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d4f0ec;
+  color: #00796b;
+  border-radius: 8px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.thank-you.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
