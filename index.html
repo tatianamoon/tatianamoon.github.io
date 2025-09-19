@@ -318,9 +318,9 @@
                     </div>
                 </div>
             </div>
-            <div class="column right">
+      <div class="column right">
   <div class="text">Ask me a question</div>
-  <form action="https://formsubmit.co/tanto_trabajo@proton.me" method="POST">
+  <form id="contact-form" action="https://formsubmit.co/tanto_trabajo@proton.me" method="POST">
       <div class="fields">
           <div class="field name">
               <input type="text" name="name" placeholder="Name" required>
@@ -338,14 +338,18 @@
       
       <!-- скрытое поле для защиты от спама -->
       <input type="hidden" name="_captcha" value="false">
-      
-      <!-- редирект после отправки -->
-      <input type="hidden" name="_next" value="https://tatianamoon.github.io/thank-you.html">
 
       <div class="button-area">
           <button type="submit">Send message</button>
       </div>
    </form>
+
+   <!-- сообщение после отправки -->
+   <div id="form-message" class="thank-you" style="display:none;">
+       Your message has been sent successfully!
+   </div>
+</div>
+
             </div>
         </div>
     </div>
@@ -362,10 +366,37 @@ footer span {
 </style>
   
     <script src="script.js"></script>
+
+     <script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault(); // блокируем стандартную отправку
+
+  const form = this;
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: formData
+  })
+  .then(response => {
+    if (response.ok) {
+      form.reset(); // очищаем поля
+      const msg = document.getElementById("form-message");
+      msg.style.display = "block";
+      setTimeout(() => msg.classList.add("show"), 10); // плавное появление
+    } else {
+      alert("⚠ Something went wrong. Please try again.");
+    }
+  })
+  .catch(() => alert("❌ Error: No connection"));
+});
+</script>
+
 </body>
 
 
 </html>
+
 
 
 
